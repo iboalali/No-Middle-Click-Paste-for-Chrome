@@ -44,6 +44,16 @@ are left alone, so middle-clicking a link still opens it in a new tab.
 - Covers Chrome/Chromium only. For GTK apps use the `gtk-enable-primary-paste` setting
   above; Firefox has `middlemouse.paste` in `about:config`.
 
+## Icons
+
+The toolbar icons in `icons/` are generated programmatically from
+[`tools/generate-icons.py`](tools/generate-icons.py) (requires Pillow). To regenerate:
+
+```bash
+pip install Pillow
+python3 tools/generate-icons.py
+```
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
